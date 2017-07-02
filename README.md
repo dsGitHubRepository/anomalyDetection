@@ -15,3 +15,6 @@ batch_log.json contains mainly "purchase" data as well as social network data of
 separate files named as "shopperID.json", "transactions.json" and "timestamps.json". 
 
 
+"socialNetworkv1.py" first collects user ids as list, UserA and UserB. 
+
+
