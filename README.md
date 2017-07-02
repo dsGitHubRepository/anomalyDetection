@@ -15,6 +15,10 @@ batch_log.json contains mainly "purchase" data as well as social network data of
 separate files named as "shopperID.json", "transactions.json" and "timestamps.json". 
 
 
-"socialNetworkv1.py" first collects user ids as list, UserA and UserB. 
+"socialNetworkv1.py" first collects user ids as list, UserA and User's 1st degree social network. Since users do multiple tarnsactions over time hence we need to figure out unique user list (UserAlist). 
 
+After that we need to find out users 1st degree social network (usrA1stdegSocNetwork).
+
+Now we need to find out users purchase history using users' unique ids. Since users did multiple purchases over time, so we need to find out users' highest purchase along with its timestamp since user's highest purchase will be considered as anomalous if it is (mean + 3*sd) more than that of the users' 1st degree social network's last 50 purchases.   
+ 
 
