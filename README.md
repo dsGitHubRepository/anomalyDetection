@@ -21,5 +21,11 @@ log_user_networkv1.py uses 1st input file batch_log.json having 500,000 line dat
 
 Since the input data consists of user social network (such as "befriend" or "unfriend") and user purchases as well as purchases of social network of various degrees such as 1st degree friend (D=1); 2nd degree friend (D=2); etc.
 
+#### Users
+
+At the beginning log_user_networkv1.py collects user ids from "event_type": "friend".  
+
+
+
 
 
