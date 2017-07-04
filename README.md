@@ -31,7 +31,7 @@ So we determine unique user list (unduplicated). With respect to this unique use
 
 First we calcualte users purchase history (U_P_R[]).
 
-### Analysis regarding 1st input file stream_log.json
+### Analysis regarding 2nd input file stream_log.json
 
 #### log_anomaPurchasev1.py
 
