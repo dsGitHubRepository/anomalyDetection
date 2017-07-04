@@ -1,4 +1,4 @@
-### Contents
+## Contents
 
 [Approach](RAEDME.md#approach)
 
@@ -11,11 +11,11 @@ Data in the second file, stream_log.json , should be used to determine whether a
 purchase is flagged as anomalous, it should be logged in the flagged_purchases.json file. As events come in, both the
 social network and the purchase history of users should get updated.
 
-### Approach
+## Approach
 
-## Analysis regarding 1st input file batch_log.json
+### Analysis regarding 1st input file batch_log.json
 
-# log_user_networkv1.py
+#### log_user_networkv1.py
 
 log_user_networkv1.py uses 1st input file batch_log.json having 500,000 line data entry. For quicker check of user network analysis through various steps of this code initially I have introduced a reduction afctor (RF = 2, 4, 8, 16 etc) that basically give us a option to test the code with relatively smaller input data. 
 
