@@ -23,7 +23,7 @@ Since the input data consists of user social network (such as "befriend" or "unf
 
 #### Users
 
-At the beginning log_user_networkv1.py collects user ids from "event_type": "friend".  
+At the beginning log_user_networkv1.py collects user ids from "event_type": "friend". After that it collects ids, timesatmps and purchase amount for purchase event while it collects [id1, id2], timestamps for social network events such as befriend or unfriend. Now [id1] are not unique since social network expands with time.  
 
 
 
