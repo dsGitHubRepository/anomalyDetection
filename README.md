@@ -13,5 +13,11 @@ social network and the purchase history of users should get updated.
 
 ### Approach
 
+## Analysis regarding 1st input file batch_log.json
+
+# log_user_networkv1.py
+
+log_user_networkv1.py uses 1st input file batch_log.json having 500,000 line data entry. For quicker check of user network analysis through various steps of this code initially I have introduced a reduction afctor (RF = 2, 4, 8, 16 etc) that basically give us a option to test the code with relatively smaller input data.   
+
 
 
