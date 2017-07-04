@@ -25,7 +25,11 @@ Since the input data consists of user social network (such as "befriend" or "unf
 
 At the beginning log_user_networkv1.py collects user ids from "event_type": "friend". After that it collects ids, timesatmps and purchase amount for purchase event while it collects [id1, id2], timestamps for social network events such as befriend or unfriend. Now [id1] are not unique since social network expands with time. 
 
-So we determine unique user list (unduplicated). With respect to this unique user lsit we sort out users (ID_U_UnDup) 1st degree friends network "ID_F1stD". 
+So we determine unique user list (unduplicated). With respect to this unique user lsit we sort out users (ID_U_UnDup[]) 1st degree friends network "ID_F1stD[]". 
+
+#### Purchase history
+
+First we calcualte users purchase history (U_P_R[]).
 
 
 
