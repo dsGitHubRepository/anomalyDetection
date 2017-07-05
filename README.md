@@ -32,13 +32,12 @@ User can make multiple purchase, however for sorting the anomalous purchases onl
 
 log_user_networkv1.py can be run with various RF with varyping parameter such as T. Additional reported output "flagged_purchases_v2.json" is done with T=5, RF=2^5. 
 
-#### Purchase history
-
-First we calcualte users purchase history (U_P_R[]).
 
 ### Analysis regarding 2nd input file stream_log.json
 
-#### log_anomaPurchasev1.py
+#### log_anomaPurchasev2.py
+
+In log_anomaPurchasev2.py does similar analysis for detecting anomalous purchase. since this file is relatively smaller in size (line entry only 1001) so it performs and presents the features within a click. Anomalous purchase deetcted here has been reported as required output "flagged_purchases.json". 
 
 
 
