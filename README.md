@@ -27,9 +27,13 @@ So we determine unique user list (unduplicated). With respect to this unique use
 
 
 Each each id was compared with purchase id to sort out users purchases. "U_P_R[]" lists [user id, user purchase time, purchase amount].
-User can make multiple purchase, however for sorting the anomalous purchases only user purchases was list where the purchase amount is greater than the user Dth degree friends network last (T purchases mean + 3*sd).
+User can make multiple purchase, however for sorting the anomalous purchases only user purchases was list where the purchase amount is greater than the user Dth degree friends network's (T purchases mean + 3*sd).
+
+User can have many fiends and that may not be revealed in a smaller data set; however code was generalized to consider this fact.
 
 Now some of the friends ids exists in the user id list that provides the clue for finding 2nd degree social network. "U_F1st_F2nd_N[]" is a list with [user id, user 1st degree friend id, user 2nd degree friend id].
+
+Purchase of users 2nd degree friends can be accomplished in a similar way as it was done for D=1.
 
 log_user_networkv1.py can be run with various RF with varyping parameter such as T. Additional reported output "flagged_purchases_v2.json" is done with T=5, RF=2^5. 
 
