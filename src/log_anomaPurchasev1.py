@@ -194,9 +194,9 @@ for i in range(0, np.size(U_P_R)/np.size(uprec)):   # np.size(U_P_R)/3 = 20
                         PfeF.append(pamount)
                         if ( np.size(PfeF)>0 ):   # this can be varied 
                             mean_P1stDFN=sum(PfeF)/nc  # mean purchase of 1st degree friends network
-                            format(mean_P1stDFN, '.2f')
+                            mean_P1stDFN=round(mean_P1stDFN, 2)
                             sd_P1stDFN=stddev(PfeF)  # std dev of purchases of 1st degree friends network
-                            format(sd_P1stDFN, '.2f')
+                            sd_P1stDFN=round(sd_P1stDFN, 2)
                             da_APC=mean_P1stDFN+(3*sd_P1stDFN)  # $ amount for Anomalous purchase condition
                             #print tstamFp, tstampUP
                             if ( upa> da_APC ):
@@ -218,7 +218,6 @@ for i in range(0, np.size(ID_1stDF)):
             u1stdF2nddF=[ID_U[i],ID_U[j],ID_1stDF[j]]
             #print "user id",ID_U[i],"friend id",ID_U[j],"2nd degree friend id",ID_1stDF[j]
             U_F1st_F2nd_N.append(u1stdF2nddF)
-        
         
 #print U_F1st_F2nd_N
 
